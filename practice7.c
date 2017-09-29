@@ -11,22 +11,23 @@
 int main() {
    
     /*Write a program in C that reads a forename, surname and year of birth and display the names and the year one after another sequentially.*/
-    //ezt nem sikerult megoldani
+ 
+    
     char firstname [10] ;
     char lastname [10];
-    int birthday ;
+    int year,month,day ;
     
     printf("What is your first name?");
-    scanf("%s", &firstname);
+    scanf("%s", firstname);
     
     printf("What is your last name?");
-    scanf("%s", &lastname);
+    scanf("%s", lastname);
     
     printf("What is your date of birth?");
-    scanf("%d",&birthday);
-
+    scanf("%d.%d.%d.", &year,&month,&day);
     
-    printf("%s,%s,%d",firstname,lastname,birthday);
+    
+    printf("%s %s,%d.%d.%d.\n",firstname,lastname,year,month,day);
     
     
     
